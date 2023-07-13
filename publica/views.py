@@ -50,7 +50,7 @@ def contact(request):
             subject = 'Nuevo mensaje de contacto'
             message = f'Nombre: {nombre}\nEmail: {email}\nMensaje: {comentario}'
             from_email = settings.EMAIL_HOST_USER
-            recipient_email = 'chikhakituti@gmail.com'
+            recipient_email = 'gusttavofilo@gmail.com'
 
             send_mail(subject, message, from_email, [recipient_email])
            
@@ -63,15 +63,15 @@ def contact(request):
         
 def aboutus(request):
     developers_list = [
-        {'name': 'Melina',
-         'role': 'Desarrolladora',
-         'image': 'melina.jpg',
-         'socialnetinst':'#',
-         'socialnetwa':'#',
+        {'name': 'Julian Moyano',
+         'role': 'Desarrollador',
+         'image': 'Julián.jpg',
+         'socialnetinst':'https://www.instagram.com/juli_maverick/',
+         'socialnetwa':'https://api.whatsapp.com/send?phone=5491169609870',
          },
-          {'name': 'Cecilia',
-         'role': 'Desarrolladora',
-         'image': 'ceci.jpeg',
+          {'name': 'Ignacio Romani',
+         'role': 'Profesor de Cloud Computer',
+         'image': 'Cloud.jpg',
          'socialnetinst':'#',
          'socialnetwa':'#',
          },
